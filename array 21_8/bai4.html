@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai_4</title>
+  </head>
+  <body>
+    <script>
+      const num = prompt("Nhập vào các số bất kỳ");
+      const arrayNum = num.split(",");
+      console.log(arrayNum);
+      let total = 0;
+      let max = arrayNum[0];
+      let min = arrayNum[0];
+      for (let index = 0; index < arrayNum.length; index++) {
+        let numberi = Number.parseInt(arrayNum[index], 10);
+        total += numberi;
+        if (max < arrayNum[index]) {
+          max = arrayNum[index];
+        }
+        if (min > arrayNum[index]) {
+          min = arrayNum[index];
+        }
+      }
+      console.log(total);
+      console.log(max);
+      console.log(min);
+    </script>
+  </body>
+</html>
