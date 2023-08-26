@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bài 2</title>
+  </head>
+  <body>
+    <form action="">
+      <input
+        type="text"
+        name="thang"
+        id="month"
+        placeholder="Nhập vào tháng cần tính"
+      />
+      <input type="button" value="Tính số ngày" id="result" />
+    </form>
+    <p id="addtext" style="font-weight: bold; padding-left: 60px"></p>
+    <script>
+      const result = document.getElementById("result");
+      result.addEventListener("click", function () {
+        const month = document.getElementById("month").value;
+        const newMonth = Number.parseFloat(month);
+        console.log(newMonth);
+        let day;
+        switch (newMonth) {
+          case 1:
+          case 3:
+          case 5:
+          case 7:
+          case 8:
+          case 10:
+          case 12:
+            day = "Tháng " + newMonth + " có 31 ngày";
+            break;
+          case 2:
+            day = "Tháng " + newMonth + " có 28 hoặc 29 ngày";
+            break;
+          default:
+            day = "Tháng " + newMonth + " có 30 ngày";
+        }
+        if (month <= 0) {
+          day = "Có tháng kiểu này à";
+        }
+        document.getElementById("addtext").innerHTML = day;
+      });
+    </script>
+  </body>
+</html>
