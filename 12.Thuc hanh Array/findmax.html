@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FindMax</title>
+  </head>
+  <body>
+    <script>
+      let array = [1, 6, 5, 6, 7, 8, 4, 6];
+      let arr =[89,24,2,3,555,2,4]
+      function findMax(array) {
+        let max = array[0];
+        for (let i = 0; i < array.length; i++) {
+          if (max < array[i]) {
+            max = array[i];
+          };
+        }
+        return max;
+      }
+      console.log(findMax(arr));
+    </script>
+  </body>
+</html>

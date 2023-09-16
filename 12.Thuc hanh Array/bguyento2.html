@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nguyen to 2</title>
+  </head>
+  <body>
+    <script>
+      function number(num) {
+        let flag = true;
+        if (num < 2) {
+          flag = false;
+        } else {
+          for (let i = 2; i < num; i++) {
+            if (num % i == 0) {
+              flag = false;
+              break;
+            } else {
+              flag = true;
+            }
+          }
+        }
+        return flag;
+      }
+      function number2(num2) {
+        let arrNum = [];
+        for (let i = 0; i < num2; i++) {
+          if (number(i) == true) {
+            arrNum.push(i);
+          }
+        }
+        return arrNum.join();
+      }
+      console.log(number2(9));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cat chuoi</title>
+  </head>
+  <body>
+    <script>
+      function catChuoi(string) {
+        for (let i = 0; i < string.length; i++) {
+          if (string.length < 15) {
+            return string;
+          }
+          return string.slice(0, 15) + "...";
+        }
+      }
+      let stringAfter =catChuoi("hjgdashjgghjfdsahdgsjkhd")
+      console.log(stringAfter);
+    </script>
+  </body>
+</html>

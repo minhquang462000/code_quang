@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viet hoa</title>
+  </head>
+  <body>
+    <script>
+      function wordCase(word) {
+        let chuDau = word.slice(0, 1);
+        // let chuSau = word.slice(1, word.length);
+        word = word.toLowerCase();
+        chuDau = chuDau.toUpperCase();
+        return chuDau + word;
+      }
+
+      console.log(wordCase("RikJHJAHD"));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bai_1</title>
+  </head>
+  <body>
+    <script>
+      const number = Number(prompt("Nhập vào một số bất kỳ"));
+      const numStr = number.toString();
+
+      const result = [numStr[0]];
+      for (i = 0; i < numStr.length; i++) {
+        if (numStr[i] % 2 == 0 && numStr[i + 1] % 2 == 0) {
+          result.push("-", numStr[i + 1]);
+        } else {
+          result.push(numStr[i + 1]);
+        }
+      }
+      const resultStr = result.join("");
+      console.log(resultStr);
+    </script>
+  </body>
+</html>

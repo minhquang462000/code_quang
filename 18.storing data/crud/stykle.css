@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.container {
+    width: 400px;
+    font-size: 30px;
+    margin: auto;
+}
+
+.div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+ul:nth-child(1){
+    border-bottom: 1px solid black;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    margin-top: 5px;
+}
+ul button{
+    font-size: 20px;
+}
+
+button {
+    font-size: 30px;
+     margin-bottom: 20px;
+}
+
+input {
+    font-size: 15px;
+    padding: 5px;
+}
